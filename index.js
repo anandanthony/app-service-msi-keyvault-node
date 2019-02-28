@@ -5,8 +5,8 @@ const KEY_VAULT_URI = null || process.env['KEY_VAULT_URI'];
 
 let app = express();
 let clientId = process.env['CLIENT_ID']; // service principal
-let domain = process.env['DOMAIN']; // tenant id
-let secret = process.env['APPLICATION_SECRET'];
+let domain = "72f988bf-86f1-41af-91ab-2d7cd011db47"; // tenant id
+let secret = "22d1ab2a14894622944f2e5385e421e3";
 
 function getKeyVaultCredentials(){
   if (process.env.APPSETTING_WEBSITE_SITE_NAME){
