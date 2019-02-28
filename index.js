@@ -18,7 +18,7 @@ function getKeyVaultCredentials(){
 
 function getKeyVaultSecret(credentials) {
   let keyVaultClient = new KeyVault.KeyVaultClient(credentials);
-  return keyVaultClient.getSecret(KEY_VAULT_URI, 'secret', "");
+  return keyVaultClient.getSecret(KEY_VAULT_URI, '22d1ab2a14894622944f2e5385e421e3', "");
 }
 
 app.get('/', function (req, res) {
